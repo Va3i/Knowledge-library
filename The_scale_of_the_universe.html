@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            padding: 0 70px 70px 70px;
+        }
+
+        .title {
+            font-family: cursive;
+            text-align: center;
+            font-size: 40px;
+            color: rgb(174, 0, 255);;
+        }
+
+        p {
+            color: black;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 20px;
+        }
+
+        li {
+            color: rgb(253, 103, 33);
+            list-style-type: upper-roman;
+            font-size: 30px;
+        }
+
+        h3 {
+            font-size: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 30px;
+            color: rgb(253, 103, 33);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 class="title"> The scale of the universe</h1>
+        <ul>
+            <li>
+                <h3>introduction :</h3>
+                <p>Everybody know that the universe is quite big, but just how big is it ? <br>
+                    well, if you want a quick answer it is rediculously big !
+                </p>
+                <p>
+                    for now I am just gonna leave you width this video, this channel is really cool,
+                    and have awesome videos, if you want to check them out, click <a href="science click/"> HERE </a>
+                    and you will get to the directory of all its videos.
+                </p>
+                <video controls>
+                        <source src="images/Schrödinger Equation Explained - Physics FOR BEGINNERS (can YOU understand this_)(240P).mp4">
+                    </video>
+            </li>
+                
+        </ul>
+
+    </div>
+</body>
+
+</html>
+
+<script src="jquery-3.4.1.js"></script>
+
+<script>
+    var clicked = false;
+    $(function () {
+        $(".stage").click(function () {
+            if (clicked == false) {
+                $(".stage").css({ 'max-height': '70px' });
+                clicked = true;
+            } else {
+                $(".stage").css({ 'max-height': '25px' });
+                clicked = false;
+            }
+        });
+    }());
+</script>

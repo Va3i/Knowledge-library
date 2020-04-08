@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            padding: 0 70px 70px 70px;
+        }
+
+        .title {
+            font-family: cursive;
+            text-align: center;
+            font-size: 40px;
+            color: rgb(174, 0, 255);;
+        }
+
+        p {
+            color: black;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 20px;
+        }
+
+        li {
+            color: rgb(253, 103, 33);
+            list-style-type: upper-roman;
+            font-size: 30px;
+        }
+
+        h3 {
+            font-size: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 30px;
+            color: rgb(253, 103, 33);
+        }
+
+        .sub {
+            list-style-type: disc;
+        }
+
+        h4 {
+            font-size: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: rgb(253, 103, 33);
+        }
+
+        .stage {
+            background: rgb(0, 149, 255);
+            font-size: 20px;
+            width: 400px;
+            color: white;
+            overflow: hidden;
+            max-height: 25px;
+            margin-left: 20px;
+            cursor: pointer;
+            transition: max-height 0.5s;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .stage:hover {
+            color: yellow;
+        }
+        #element{
+            font-size: 14px;
+            color:black;
+            margin: 10px 20px;
+        }
+        img{
+            width: 1000px;
+            height: 600px;
+        }
+        .other{
+            font-size: 20px;
+        }
+        #me{
+            width: 380px;
+            height: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 class="title"> Sleep Paralysis</h1>
+        <center> <img src="images/sleep_para1.jpg" alt="lib_wallpaper1" id="wall1"> </center> 
+        <ul>
+            <li>
+                <h3>introduction :</h3>
+                <p>The word of <i>'Sleep Paralysis'</i> may seem quite technichal and a word that you
+                    don't nessaceraly need to know, but by the end of the video you will realize that
+                    it's not that odd after all, and you are probably familiar with this concept, though
+                    with a diffrent approach, or at least have heard of it. So without further do, let's
+                    dive into the bottom of the subject.
+                </p>
+            </li>
+            <li>
+                <h3> What is Sleep Paralysis ? </h3>
+                <p>
+                    It is defined as the unability to move or to speak while falling asleep of
+                    upon waking up. now that was letteral definition, let's now boil things down
+                    a little bit, Sleep Paralysis is the feeling that you can't speak or move
+                    while you are sleeping. most of you have already experienced that at least
+                    once on their lifetime, if not then to help you get a better idea about what
+                    it is, know that it is called <i> 'Boubarak' </i> in our culture (kabylie).
+                </p>
+                <center> <img src="images/me.jpg" alt="lib_wallpaper1" id="me"> </center> 
+                <p>
+                    Almost every culture has had stories of this wierd yet very
+                    common phenomenon, but most of them think that it is atributed to the presence of a
+                    devil, mysterious creature or an unknown, hidden and evil spirit. As we mentiened
+                    before, our culture is no exeption, as it attributes this to the presence of <i> 'Boubarak'
+                    </i>. But today I want to change this and tell you what experts and scintists think
+                    about Sleep Paralysis.
+                </p>
+            </li>
+            <li>
+                <h3>How does it occur ?</h3>
+                <center> <img src="images/sleep-para2.jpg" alt="lib_wallpaper1" id="wall1"> </center> 
+                <p>
+                    To understand how this actually occurs, we need to have first an idea about what happens
+                    when we fall to sleep.
+                </p>
+                <ul class="other">
+                    <li class="sub">
+                        <h4>Cycles Of Sleep :</h4>
+                        <p>
+                            Cycles of sleep are the stages of physiological and biological procedures through
+                            which you body and brain passes while sleeping, those cycles are repeated while you
+                            are sleeping, they are repeated 4 to 6 times on average with each taking about 90 minutes
+                            until it's complete. <br>
+                            To make things a little more clear, a cycle of sleep is a set of stages through which your
+                            body
+                            passes, and this cycle is repeated during your sleep from 4 to 6 times, each cycle lasts
+                            90 minutes. Are we clear ? if not, then just read again the what I whote above.
+                        </p>
+                    </li>
+                    <li class="sub">
+                        <h4>Stages Of Sleep :</h4>
+                        <p>
+                            Those are the stages of each cycle of sleep, there are 5 of them, the 3rd and 4th ones
+                            are almost the same, so we will consider them as one stage. <br>
+                        </p>
+                        <div class="stage">
+                            <center>Details about stages of the sleep</center>
+                            <div id="element">
+                                <u>Stage one</u> : the first and lighest stage in.
+                            </div>
+                        </div>
+                        <p>so that's it for today I don't know if you made it to here anyway, I thank you all !</p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+    </div>
+</body>
+
+</html>
+
+<script src="jquery-3.4.1.js"></script>
+
+<script>
+    var clicked = false;
+    $(function () {
+        $(".stage").click(function () {
+            if (clicked == false) {
+                $(".stage").css({ 'max-height': '70px' });
+                clicked = true;
+            } else {
+                $(".stage").css({ 'max-height': '25px' });
+                clicked = false;
+            }
+        });
+    }());
+</script>

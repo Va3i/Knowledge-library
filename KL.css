@@ -1,0 +1,141 @@
+body {
+    background: rgb(216, 216, 216);
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.head {
+    border: 2px solid black;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    height: 90px;
+    background: url('../Kownledge Library/images/books.png');
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    z-index: 0;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.496);
+}
+
+span {
+    margin: auto;
+}
+
+.shade {
+    display: flex;
+    background: rgba(0, 0, 0, 0.476);
+    width: 100%;
+    height: 90px;
+    font-size: 35px;
+    justify-content: center;
+    z-index: 0;
+}
+.shade:hover{
+    background: rgba(0, 0, 0, 0.537);
+}
+.image {
+    border-radius: 20%;
+    transition: transform 0.7s ,border-radius 0.7s;
+    position: sticky;
+    height: 35px;
+    width: 37px;
+    margin-top: 3px;
+    cursor: pointer;
+}
+
+.slide {
+    position: fixed;
+    width: 250px;
+    height: 100vh;
+    background: rgb(18, 102, 96);
+    transform: translateX(-270px);
+    transition: transform 0.7s;
+    z-index: 20;
+    top: 0;
+    left: 0;
+}
+
+#frame{
+    margin-top: 90px;
+    height: 100%;
+    width: 100%;
+}
+.body-content{
+    width: 100%;
+}
+#lib{
+    box-sizing: border-box;
+    box-shadow: 0px 0px 20px 5px white;
+    border: 1px solid black;
+    margin-top: 20px;
+    width: 200px;
+    height:80px;
+    border-radius: 30px;
+    transition: box-shadow 1s;
+}
+#lib:hover{
+    box-shadow: 0px 0px 40px 20px rgb(246, 255, 78);
+}
+.lib-img{
+    margin-bottom: 50px;
+    justify-content: center;
+    display: flex;
+}
+.item{
+    cursor: pointer;
+    transition: background 0.5s;
+    display:flex;
+    height: 50px;
+    color:white;
+    border-top: solid 1px white ;
+}
+.item:hover{
+    background: rgb(16, 75, 71) ;
+}
+.it{
+    position: relative;
+    left: -117px;
+    font-family: cursive;
+}
+#home{
+    position: relative;
+    margin:auto;
+    margin-left: 3px;
+    width:20px;
+    height: 20px;
+}
+.three{
+    left:-50px
+}
+#widget{
+    transition: transform 0.3s;
+    position: relative;
+    left:-20px;
+    width: 10px;
+    height: 15px;
+    top: 20px;
+}
+.two{
+    left:-111px
+}
+.all{
+    max-height: 0;
+    overflow: hidden;
+    margin-left: 15px;
+    margin-right: 20px;
+    transition: max-height 0.3s;
+}
+.special{
+    border-top: solid 1px rgb(216, 75, 75);
+    position: relative;
+    display: block;
+    height: 35px;
+    line-height: 2;
+}
+.come{
+    font-size: 14px;
+    font-family: cursive;
+    margin-left:10px;
+}
